@@ -120,14 +120,14 @@ def third_law(t,GM,semimajor):	# CREATE A FUNCTION FOR CALCULATING THIRD LAW
     
 def comparision(sol_an,x,y,vx,vy): # CREATE A FUNCTION FOR COMPARING THE DATA OF CREATED LEAP FROG AND SCIPY ODEINT FUNCTION
     print("\nCOMPARISION BETWEEN SCIPY ODEINT FUNCTION AND LEAP FROG METHOD:")
-    error_x = abs(np.array(sol_an[:,0]) - np.array(x)) 	# AVERAGE OF (|X_scipy - X_leapfrog|)
-    error_y = abs(np.array(sol_an[:,1]) - np.array(y))	# AVERAGE OF (|Y_scipy - Y_leapfrog|)
-    error_vx = abs(np.array(sol_an[:,2]) - np.array(vx))	# AVERAGE OF (|VELOCIY_X_scipy - VELOCIY_X_leapfrog|)
-    error_vy = abs(np.array(sol_an[:,3]) - np.array(vy))	# AVERAGE OF (|VELOCIY_Y_scipy - VELOCIY_Y_leapfrog|)
-    print("\nAverage of absolute error in x coordinate (b/w odeint and leap frog) is:",np.mean(error_x),"meters")
-    print("\nAverage of absolute error in y coordinate (b/w odeint and leap frog) is:",np.mean(error_y),"meters")
-    print("\nAverage of absolute error in velocity x coordinate (b/w odeint and leap frog) is:",np.mean(error_vx),"meter per second")
-    print("\nAverage of absolute error in velocity y coordinate (b/w odeint and leap frog) is:",np.mean(error_vy),"meter per second")
+    error_x = abs(np.array(sol_an[:,0]) - np.array(x))
+    error_y = abs(np.array(sol_an[:,1]) - np.array(y))
+    error_vx = abs(np.array(sol_an[:,2]) - np.array(vx))
+    error_vy = abs(np.array(sol_an[:,3]) - np.array(vy))
+    print("\nAverage of absolute error in x coordinate (b/w odeint and leap frog) is:",np.mean(error_x),"meters") # AVERAGE OF (|X_scipy - X_leapfrog|)
+    print("\nAverage of absolute error in y coordinate (b/w odeint and leap frog) is:",np.mean(error_y),"meters") # AVERAGE OF (|Y_scipy - Y_leapfrog|)
+    print("\nAverage of absolute error in velocity x coordinate (b/w odeint and leap frog) is:",np.mean(error_vx),"meter per second") # AVERAGE OF (|VELOCIY_X_scipy - VELOCIY_X_leapfrog|)
+    print("\nAverage of absolute error in velocity y coordinate (b/w odeint and leap frog) is:",np.mean(error_vy),"meter per second") # AVERAGE OF (|VELOCIY_Y_scipy - VELOCIY_Y_leapfrog|)
 
 def text_files(x,y,vx,vy,acc_x,acc_y,r,t,sol_an,t1): # CREATE A FUNCTION FOR STORING GENERATED DATA IN TEXT FILES 
     data1 = np.column_stack([t,x,y])
@@ -212,4 +212,4 @@ if __name__ == "__main__":
     print("\n----------------------------------------------------------------------------------")
     comparision(sol_an,x,y,vx,vy)
     text_files(x,y,vx,vy,acc_x,acc_y,r,t,sol_an,t1)
-    
+ 
