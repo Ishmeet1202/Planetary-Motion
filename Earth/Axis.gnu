@@ -4,7 +4,7 @@ set term qt
 
 set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb "black" behind
 
-unset key                                #set key noautotitle
+unset key                                
 
 set title "Axis Plot" font ",15" tc rgb "white"
 set xlabel "X coordinates" font ",12" tc rgb "white"
