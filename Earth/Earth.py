@@ -152,10 +152,10 @@ if __name__ == "__main__":
     N4 = int(input("\nEnter the ending point (multiple of step size) for area 2: "))
 
     # INITIAL CONDITIONS
-    x_initial = 147092000000# in meter
+    x_initial = 147092000000 # IN METER
     y_initial = 0.0
     vx_initial = 0.0
-    vy_initial = 30.29 * 10**3 # in meter/second
+    vy_initial = 30.29 * 10**3 # IN METER PER SECOND
     time = 0
     GM = (6.67430 * 10**(-11) * 1.989 * 10**30)
     me = 5.97219 * 10**24 ; M = 1.989 * 10**30 # MASS OF EARTH AND SUN IN Kg
