@@ -177,7 +177,7 @@ if __name__ == "__main__":
     
     sol = leap_frog(x,y,vx,vy,acc_x,acc_y,r,t,h,GM) # LEAP FROG METHOD
     
-    t1 = np.arange(0,31579200+h,h) # TIME RANGE FOR ODEINT FUNCTION    
+    t1 = np.arange(0,t[-1]+h,h) # TIME RANGE FOR ODEINT FUNCTION    
     sol_an = odeint(func,initial,t1) # SCIPY ODEINT SOLUTION
     
     center_x = (min(x)+x_initial)/2 # CENTER OF THE ELLIPSE
