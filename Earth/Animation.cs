@@ -9,9 +9,7 @@ public class Rotate : MonoBehaviour
     private float xaxis, yaxis, a = 18, b = 20;
     public TrailRenderer trail;
     public GameObject Sun;
-    private Vector3 offset = new Vector3(0, 10, 0);
     
-    public Camera MainCamera;
     public enum Planet
     {
         Sun,
