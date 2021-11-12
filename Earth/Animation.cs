@@ -6,7 +6,7 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     float alpha = 0;
-    private float xaxis, yaxis, a = 18, b = 20;
+    private float xaxis, yaxis, a = 1, b = 0.9998571;
     public TrailRenderer trail;
     public GameObject Sun;
     
